@@ -1,0 +1,25 @@
+{
+  "name": "rspack-api-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@rspack/core": "^1.2.2",
+    "@tailwindcss/postcss": "^4.0.3",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.12.0",
+    "express": "^4.21.2",
+    "memfs": "^4.17.0",
+    "postcss-loader": "^8.1.1",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.3",
+    "webpack": "^5.97.1",
+    "webpack-merge": "^6.0.1"
+  }
+}
