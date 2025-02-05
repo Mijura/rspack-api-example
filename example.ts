@@ -1,5 +1,5 @@
 
-import { RspackApiCompiler } from "./RspackApiCompiler";
+import { RspackApiCompiler } from "./RspackApiCompiler"
 
 const compiler = new RspackApiCompiler()
 

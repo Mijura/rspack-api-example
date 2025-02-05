@@ -1,3 +1,3 @@
-interface Compiler {
+export default interface Compiler {
   run(): void;
 }
