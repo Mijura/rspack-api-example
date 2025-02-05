@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RspackApiCompiler = void 0;
+exports.RspackCompiler = void 0;
 const core_1 = require("@rspack/core");
-class RspackApiCompiler {
+class RspackCompiler {
     constructor(configPath) {
         this.config = require(configPath);
     }
@@ -26,4 +26,4 @@ class RspackApiCompiler {
         compiler.close(() => console.log("Compiler closed."));
     }
 }
-exports.RspackApiCompiler = RspackApiCompiler;
+exports.RspackCompiler = RspackCompiler;

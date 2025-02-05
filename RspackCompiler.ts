@@ -1,7 +1,7 @@
 import { rspack, MultiCompiler, MultiRspackOptions } from "@rspack/core";
 import Compiler from "./Compiler";
 
-export class RspackApiCompiler implements Compiler {
+export class RspackCompiler implements Compiler {
   config: MultiRspackOptions;
 
   constructor(configPath: string) {

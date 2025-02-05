@@ -1,6 +1,6 @@
 
-import { RspackApiCompiler } from "./RspackApiCompiler"
+import { RspackCompiler } from "./RspackCompiler"
 const configPath = "./template/configs/rspack.prod.js"
-const compiler = new RspackApiCompiler(configPath)
+const compiler = new RspackCompiler(configPath)
 
 compiler.run()
