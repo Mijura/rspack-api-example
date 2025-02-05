@@ -2,12 +2,14 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RspackApiCompiler = void 0;
 const core_1 = require("@rspack/core");
-const devConfig = require("./template/configs/rspack.dev.js");
 class RspackApiCompiler {
+    constructor(configPath) {
+        this.config = require(configPath);
+    }
     run() {
-        console.log("Dev Config:", JSON.stringify(devConfig, null, 2));
+        console.log("Dev Config:", JSON.stringify(this.config, null, 2));
         // Create and configure a Compiler instance
-        const compiler = (0, core_1.rspack)(devConfig);
+        const compiler = (0, core_1.rspack)(this.config);
         // Run the compiler
         compiler.run((err, stats) => {
             if (err) {
