@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dev-server-example.js"
+    "build": "tsc && node build-example.js",
+    "serve": "tsc && node dev-server-example.js"
   },
   "keywords": [],
   "author": "",
