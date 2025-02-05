@@ -24,7 +24,7 @@ class RspackCompiler {
         this.compiler.close(() => console.log("Compiler closed."));
     }
     getConfig() {
-        console.log("Dev Config:", JSON.stringify(this.config, null, 2));
+        console.log("Prod Config:", JSON.stringify(this.config, null, 2));
         return this.config.toString();
     }
 }
