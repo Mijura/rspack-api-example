@@ -5,13 +5,11 @@ const core_1 = require("@rspack/core");
 class RspackCompiler {
     constructor(configPath) {
         this.config = require(configPath);
+        this.compiler = (0, core_1.rspack)(this.config);
     }
     run() {
-        console.log("Dev Config:", JSON.stringify(this.config, null, 2));
-        // Create and configure a Compiler instance
-        const compiler = (0, core_1.rspack)(this.config);
         // Run the compiler
-        compiler.run((err, stats) => {
+        this.compiler.run((err, stats) => {
             if (err) {
                 console.error("Compilation error:", err);
                 return;
@@ -23,7 +21,11 @@ class RspackCompiler {
             console.log("Compilation succeeded!");
         });
         // Close the compiler
-        compiler.close(() => console.log("Compiler closed."));
+        this.compiler.close(() => console.log("Compiler closed."));
+    }
+    getConfig() {
+        console.log("Dev Config:", JSON.stringify(this.config, null, 2));
+        return this.config.toString();
     }
 }
 exports.RspackCompiler = RspackCompiler;
