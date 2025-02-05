@@ -1,0 +1,3 @@
+interface Compiler {
+  run(): void;
+}
