@@ -1,6 +1,6 @@
 import { rspack, MultiCompiler } from '@rspack/core'
 
-const devConfig = require('./template/configs/rspack.dev.js') 
+const devConfig = require('./template/configs/rspack.prod.js') 
 
 export const buildSourceCode = () => {
 

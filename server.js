@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.buildSourceCode = void 0;
 const core_1 = require("@rspack/core");
-const devConfig = require('./template/configs/rspack.dev.js');
+const devConfig = require('./template/configs/rspack.prod.js');
 const buildSourceCode = () => {
     console.log("Dev Config:", JSON.stringify(devConfig, null, 2));
     // Create and configure a Compiler instance
