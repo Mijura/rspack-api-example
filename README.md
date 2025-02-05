@@ -11,14 +11,14 @@ Follow these steps to set up and run the project:
 yarn install
 ```
 
-### 2. Compile `server.ts` to JavaScript
+### 2. Compile .ts files to JavaScript
 ```sh
-npx tsc --jsx react
+yarn build
 ```
 
-### 3. Run the build
+### 3. Run the project compilation
 ```sh
-node server.js
+yarn start
 ```
 
 ## React Template
