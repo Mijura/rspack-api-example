@@ -6,4 +6,3 @@ const compiler = new RspackCompiler(configPath)
 //compiler.getConfig()
 
 compiler.run()
-
